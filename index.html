@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/94252a356d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+        <h1 class="m-5 text-center">Calculator 	&#128123</h1>
+</header>
+
+<form>
+    <div class="row">
+        <div class="col m-4 d-flex justify-content-end">
+            <div class="form-group m-3">
+                <label for="firstNumber">First number</label>
+                <input type="number" value=0 class="form-control" id="firstNumber" placeholder="Enter first number" >
+            </div>
+        </div>
+        <div class="col m-4 d-flex">
+            <div class="form-group m-3">
+                <label for="secondNumber">Second number</label>
+                <input type="number" value="0" class="form-control" id="secondNumber" placeholder="Enter second number">
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons m-4 d-flex justify-content-center">
+        <button  type="button" id="addition" class="btn-add btn me-3"><i class="fa-solid fa-plus"></i></button>
+        <button  type="button" id="extraction" class="btn-extract btn me-3"><i class="fa-solid fa-minus"></i></button>
+        <button  type="button" id="multiplication" class="btn-multiple btn me-3"><i class="fa-solid fa-multiply"></i></button>
+        <button  type="button" id="division" class="btn-divide btn me-3"><i class="fa-solid fa-divide"></i></button>
+    </div>
+
+<!--    <p id="val" class="text-center">First number</p>-->
+<!--    <p id="val2" class="text-center">Second number</p>-->
+    <p id="result" class="text-center">Result</p>
+</form>
+
+<script src="scripts.js"></script>
+</body>
+</html>
